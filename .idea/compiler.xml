@@ -9,5 +9,8 @@
         <module name="moe.ccn" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="moe.ccn" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

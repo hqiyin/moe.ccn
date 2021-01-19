@@ -1,8 +1,7 @@
 package device;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Builder;
+import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,60 +9,38 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
-@Getter
-@Setter
-@ToString
+@Data
+@Builder
 @Entity
 @Table(name="device")
 public class Device {
-
-    @Getter
-    @Setter
     @Id
     private int id;
     //名称
-    @Getter
-    @Setter
     @Column(name="")
     private String name;
     //资产编号
-    @Getter
-    @Setter
     @Column(name="")
-    private String zcNumber;
+    private String assetNumbers;
     //规格型号
-    @Getter
-    @Setter
     @Column(name="")
     private String model;
     //材质
-    @Getter
-    @Setter
     @Column(name="")
-    private String cz;
+    private String material;
     //生产厂家
-    @Getter
-    @Setter
     @Column(name="")
     private String manufacturer;
     //出厂编号
-    @Getter
-    @Setter
     @Column(name="")
     private String factoryNumber;
-    //进场时间
-    @Getter
-    @Setter
+    //验收日期
     @Column(name="")
-    private Date entryTime;
+    private Date acceptanceDate;
     //参数
-    @Getter
-    @Setter
     @Column(name="")
     private String parameter;
     //备注
-    @Getter
-    @Setter
     @Column(name="")
     private String remarks;
 

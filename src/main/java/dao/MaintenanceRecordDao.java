@@ -1,7 +1,6 @@
 package dao;
 
-public interface DeviceDao {
-
+public class MaintenanceRecordDao {
     //增
     //删
     //改

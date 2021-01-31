@@ -1,6 +1,5 @@
-package device;
+package model;
 
-import static org.junit.jupiter.api.Assertions.*;
 class DeviceTest {
 
     @org.junit.jupiter.api.Test

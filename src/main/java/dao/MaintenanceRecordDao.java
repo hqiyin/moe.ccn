@@ -1,6 +1,6 @@
 package dao;
 
-public class MaintenanceRecordDao {
+public interface MaintenanceRecordDao {
     //增
     //删
     //改
